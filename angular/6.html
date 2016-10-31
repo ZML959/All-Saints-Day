@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular/angular.js"></script>
+</head>
+<body ng-app="maApp" ng-controller="demo">
+<input type="" ng-model="user.name" name="" value="">
+<p>hello:{{user.name}}</p>
+<script>
+    var app=angular.module("maApp",[]);
+    app.controller("demo",function ($scope) {
+            $scope.user={};
+            $scope.user.name="飞飞";
+        console.log($scope.user);
+    })
+</script>
+
+</body>
+</html>
